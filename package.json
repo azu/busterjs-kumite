@@ -1,0 +1,16 @@
+{
+    "author" : "azu",
+    "name" : "BusterJS-Kumite",
+    "description" : "A part of The little book of Buster.JS ",
+    "version" : "0.0.1",
+    "scripts" : {
+        "test" : "make test"
+    },
+    "dependencies" : {
+        "buster" : "~0.5.0"
+    },
+    "engines" : {
+        "node" : "~0.6"
+    },
+    "license" : "MIT"
+}
