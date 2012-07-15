@@ -10,27 +10,27 @@ buster.testCase("Date strftime tests", {
     },
 
     "test format specifier %Y" : function(){
-        assert(Date.formats.Y(this.date) === 2009,
+        assert.same(Date.formats.Y(this.date), "2009",
                 "%Y should return full year");
     },
 
     "test format specifier %m" : function(){
-        assert(Date.formats.m(this.date) === "10",
+        assert.same(Date.formats.m(this.date), "10",
                 "%m should return month");
     },
 
     "test format specifier %d" : function(){
-        assert(Date.formats.d(this.date) === "02",
+        assert.same(Date.formats.d(this.date), "02",
                 "%d should return date");
     },
 
     "test format specifier %y" : function(){
-        assert(Date.formats.y(this.date) === "09",
+        assert.same(Date.formats.y(this.date), "09",
                 "%y should return year as two digits");
     },
 
     "test format shorthand %F" : function(){
-        assert(Date.formats.F === "%Y-%m-%d",
+        assert.same(Date.formats.F, "%Y-%m-%d",
                 "%F should be shortcut for %Y-%m-%d");
     }
 });
