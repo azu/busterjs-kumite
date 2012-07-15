@@ -5,5 +5,4 @@ if (typeof require == "function" && typeof module == "object"){
 }
 // テストケース
 buster.testCase("Date strftime tests", {
-
 });
