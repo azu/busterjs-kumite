@@ -37,7 +37,7 @@ if (typeof Date.prototype.strftime !== "function"){
             },
 
             Y : function(date){
-                return date.getFullYear();
+                return date.getFullYear() + "";
             },
 
             j : function(date){
