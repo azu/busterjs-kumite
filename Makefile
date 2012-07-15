@@ -3,3 +3,5 @@ test:
 	$(buster-test) -c getting-started/buster.js
 	$(buster-test) -c config-patterns/buster.js -e node
 	$(buster-test) -c config-patterns/buster.js -e browser
+	$(buster-test) -c strftime/buster.js -e node
+	$(buster-test) -c strftime/buster.js -e browser
