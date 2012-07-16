@@ -6,4 +6,4 @@ A lot of [Buster.JS](http://busterjs.org/ "Buster.JS")'s example codes.
 
 This project is tested on [Travis CI](http://travis-ci.org/#!/azu/busterjs-kumite "azu/busterjs-kumite | Travis CI")
 
-[![Build Status](https://secure.travis-ci.org/azu/busterjs-kumite.png)](https://secure.travis-ci.org/azu/busterjs-kumite.png)
+[![Build Status](https://secure.travis-ci.org/azu/busterjs-kumite.png)](http://travis-ci.org/#!/azu/busterjs-kumite)
