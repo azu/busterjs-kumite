@@ -6,10 +6,10 @@ buster.testCase("setup/teardown", {
     tearDown : function(){
         this.i--;
     },
-    "one should be 1" : function(){
+    "one" : function(){
         assert.equals(this.i, 1);
     },
-    "twice should be 1" : function(){
+    "two" : function(){
         assert.equals(this.i, 1);
     }
 });
