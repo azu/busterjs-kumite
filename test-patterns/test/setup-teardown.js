@@ -1,13 +1,13 @@
 buster.testCase("setup/teardown", {
     setUp : function(){
-        this.i = this.i || 0;
-        this.i++;
+        this.i = 1
     },
     tearDown : function(){
-        this.i--;
+        delete this.i;
     },
     "one" : function(){
-        assert.equals(this.i, 1);
+        this.i = 10;
+        assert.equals(this.i, 10);
     },
     "two" : function(){
         assert.equals(this.i, 1);
