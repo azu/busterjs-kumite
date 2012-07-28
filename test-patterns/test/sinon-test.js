@@ -14,7 +14,7 @@ buster.testCase("SinonJS", {
     "test a stub" : function(){
         var stub = this.stub(this.myLib, "method");// sinon.stub
         stub.withArgs("hello").returns("world");// "hello" を渡すと "world" を返す
-        assert.equals(this.myLib.method("hello"), "world");// return to "world"
+        assert.equals(this.myLib.method("hello"), "world");// return "world"
     },
     "test a mock" : function(){
         var mock = this.mock(this.myLib);// sinon.stub

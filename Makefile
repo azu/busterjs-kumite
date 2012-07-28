@@ -6,3 +6,4 @@ test:
 	$(buster-test) -c strftime/buster.js -e node
 	$(buster-test) -c strftime/buster.js -e browser
 	NODE_PATH=reporters/reporter  $(buster-test) -c reporters/buster.js -e browser -r myReporter
+	$(buster-test) -c test-patterns/buster.js -e browser
