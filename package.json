@@ -7,7 +7,9 @@
         "test" : "make test"
     },
     "dependencies" : {
-        "buster" : "~0.6.0"
+        "buster" : "~0.6.0",
+        "buster-core": ">=0.6.2",
+        "buster-terminal": ">=0.4.1"
     },
     "engines" : {
         "node" : "~0.7"
