@@ -1,8 +1,11 @@
+var terminal = require("buster-terminal");
+
 module.exports = {
     create : function(opt){
         var reporter = buster.create(this);
         opt = opt || {};
         reporter.io = opt.io || require("util");
+        reporter.term = terminal.create(opt);
         reporter.testCount = 0;
         reporter.contexts = [];
 
@@ -33,7 +36,8 @@ module.exports = {
         }else{
             this.contexts.push(context.name);
             var space = new Array(this.contexts.length);
-            this.io.puts(space.join("\t") + "<" + context.name + ">");
+            var color = "yellow";
+            this.io.puts(space.join("\t") + this.term[color]("<" + context.name + ">"));
         }
     },
 
