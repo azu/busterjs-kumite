@@ -1,7 +1,7 @@
 var buster = require("buster");// for Node env
 buster.testCase("My Test Case", {
     "assert.euqals a === B" : function(){
-        assert.equals("oo", "foo");
+        assert.equals("foo", "foo");
     },
     "should be true" : function(){
         assert(true);

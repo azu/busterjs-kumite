@@ -4,7 +4,7 @@ buster.testCase("My Test Case", {
     },
     "Context" : {
         "TEST TWO" : function(){
-            refute.equals("foo", "foo");
+            refute.equals("foo", "bar");
         },
         "Context NEST" : {
             "//TEST Three" : function(){
