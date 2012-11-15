@@ -11,8 +11,5 @@
         "buster-core": ">=0.6.2",
         "buster-terminal": ">=0.4.1"
     },
-    "engines" : {
-        "node" : "~0.7"
-    },
     "license" : "MIT"
 }
