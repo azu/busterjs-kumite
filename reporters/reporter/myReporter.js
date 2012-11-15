@@ -17,7 +17,7 @@ module.exports = {
             "suite:end" : "suiteEnd", "context:start" : "contextStart",
             "context:end" : "contextEnd", "test:success" : "testSuccess",
             "test:start" : "testStart", "test:deferred" : "testDeferred",
-            "test:failure" : "testEnd", "test:error" : "testEnd",
+            "test:failure": "testFailure", "test:error" : "testEnd",
             "test:timeout" : "testEnd", "context:unsupported" : "contextUnsupported"
         });
 
@@ -76,6 +76,9 @@ module.exports = {
 
         this.io.puts(this.spacer + label(this.test) + this.testCount + " " +
                 this.test.name);
+    },
+    "testFailure" : function(test){
+        this.io.puts(test.error.stack);
     }
 };
 function label(test){

@@ -1,6 +1,6 @@
 buster.testCase("testCase Context", {
     "test #1" : function(){
-        assert(true);
+        assert.same("test", "test");
     },
     "context" : {
         "test #2" : function(){
