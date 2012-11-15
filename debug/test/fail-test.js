@@ -13,7 +13,7 @@ buster.testCase("My Failure Test", {
             buster.assertions.emit("pass", "fail", message || "");
         };
         this.overWritePass = function pass(name, message){
-            // 明示的にfail経由で呼び出れたものは素通りして、それ以外の時は実際にfailを発生させる
+            // 明示的にfail経由で呼び出されたものは素通りして、それ以外の時は実際にfailを発生させる
             if (name !== "fail"){
                 var fail_message = "[" + name + "] " + message;
                 this.orig_fail.call(buster.assertions, fail_message);
