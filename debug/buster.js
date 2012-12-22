@@ -6,3 +6,14 @@ config["My tests"] = {
         "test/*-test.js"
     ]
 };
+
+config["Browser tests"] = {
+    env : "browser", // or "browser"
+    tests : [
+        "browser-test/*-test.js"
+    ],
+    testHelpers : [
+        "helper/browser-helper.js"
+    ]
+
+};
