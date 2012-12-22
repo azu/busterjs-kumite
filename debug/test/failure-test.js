@@ -24,6 +24,7 @@ buster.testCase("My Failure Test", {
         "exception test" : function(){
             throw new Error("cause error");
             assert(true);
-        }// => Error
+        } // => Error
     }
+
 });

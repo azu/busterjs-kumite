@@ -12,7 +12,7 @@ config["Failure tests"] = {
 config["Error is True tests"] = {
     env : "browser", // or "browser"
     tests : [
-        "browser-test/perverseness-test.js"
+        "test/perverseness-test.js"
     ],
     testHelpers : [
         "helper/browser-helper.js"

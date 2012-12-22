@@ -1,4 +1,3 @@
-var buster = require("buster");
 buster.testCase("My Failure Test", {
     setUp : function(){
         // failを乗っ取る
