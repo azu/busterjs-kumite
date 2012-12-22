@@ -1,3 +1,4 @@
+
 var config = module.exports;
 config["My tests"] = {
     env : "browser",
