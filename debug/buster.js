@@ -1,16 +1,18 @@
 var config = module.exports;
 
-config["My tests"] = {
+// テストが失敗するパターン
+config["Failure tests"] = {
     env : "node", // or "browser"
     tests : [
-        "test/*-test.js"
+        "test/failure-test.js"
     ]
 };
 
-config["Browser tests"] = {
+// 天邪鬼テスト
+config["Error is True tests"] = {
     env : "browser", // or "browser"
     tests : [
-        "browser-test/*-test.js"
+        "browser-test/perverseness-test.js"
     ],
     testHelpers : [
         "helper/browser-helper.js"
