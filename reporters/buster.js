@@ -1,8 +1,9 @@
-
 var config = module.exports;
 config["My tests"] = {
     env : "browser",
     tests : [
-        "test/*-test.js"
-    ]
+        "reporters/test/*-test.js"
+    ],
+    rootPath: "../",
+    testHelpers: ["helper/helper.js"]
 };

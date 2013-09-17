@@ -1,17 +1,22 @@
 var config = module.exports;
-
+config["common"] = {
+    rootPath: "../",
+    testHelpers: ["helper/helper.js"]
+}
 config["node tests"] = {
+    extends: "common",
     env : "node",
     tests : [
-        "test/node-test.js",
-        "test/hybrid-test.js"
+        "config-patterns/test/node-test.js",
+        "config-patterns/test/hybrid-test.js"
     ]
 };
 
 config["browser tests"] = {
+    extends: "common",
     env : "browser",
     tests : [
-        "test/browser-test.js",
-        "test/hybrid-test.js"
+        "config-patterns/test/browser-test.js",
+        "config-patterns/test/hybrid-test.js"
     ]
 };

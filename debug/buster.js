@@ -1,21 +1,33 @@
 var config = module.exports;
-
+config["common"] = {
+    rootPath: "../",
+    testHelpers: ["helper/helper.js"]
+}
 // テストが失敗するパターン
 config["Failure tests"] = {
-    env : "node", // or "browser"
+    extends: "common",
+    env : "node",
     tests : [
-        "test/failure-test.js"
+        "debug/test/failure-test.js"
+    ]
+};
+config["Failure tests"] = {
+    extends: "common",
+    env : "browser",
+    tests : [
+        "debug/test/failure-test.js"
     ]
 };
 
 // 天邪鬼テスト
 config["Error is True tests"] = {
-    env : "browser", // or "browser"
+    extends: "common",
+    env : "browser",
     tests : [
-        "test/perverseness-test.js"
+        "debug/test/perverseness-test.js"
     ],
     testHelpers : [
-        "helper/browser-helper.js"
+        "debug/helper/browser-helper.js"
     ]
 
 };

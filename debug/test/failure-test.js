@@ -1,10 +1,14 @@
 if (typeof module == "object" && typeof require == "function"){
     var buster = require("buster");// node環境なら読み込む
 }
+function fai(){
+    assert(false);
+}
 buster.testCase("My Failure Test", {
     "Assertion failure" : {
         "refute should fail" : function(){
             refute(true);
+
             // => [refute] Expected true to be falsy
         },
         "assert.same should fail" : function(){
@@ -22,8 +26,8 @@ buster.testCase("My Failure Test", {
     },
     "Exception failure" : {
         "exception test" : function(){
-            throw new Error("cause error");
             assert(true);
+            throw new Error("cause error");
         } // => Error
     }
 

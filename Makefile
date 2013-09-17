@@ -1,3 +1,3 @@
 
 test:
-	sh test.sh
+	sh -x test.sh

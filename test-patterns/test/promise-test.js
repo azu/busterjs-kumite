@@ -1,3 +1,4 @@
+var when = buster.when;
 buster.testCase("Promise", {
     "test async, use promise" : function(){
         var promise = { // then メソッドの有無が重要

@@ -6,10 +6,11 @@
     "scripts" : {
         "test" : "make test"
     },
-    "dependencies" : {
-        "buster" : "~0.6.0",
-        "buster-core": ">=0.6.2",
-        "buster-terminal": ">=0.4.1"
+    "devDependencies" : {
+        "buster" : "~0.7",
+        "buster-core": ">=0.6",
+        "buster-terminal": ">=0.4.1",
+        "phantomjs": ">=1.0.0"
     },
     "license" : "MIT"
 }

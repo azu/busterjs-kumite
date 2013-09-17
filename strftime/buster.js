@@ -1,18 +1,23 @@
 var config = module.exports;
-
+config["common"] = {
+    rootPath : "../",
+    testHelpers: ["helper/helper.js"]
+}
 config["My node test"] = {
-    env : "node", // or "browser"
+    extends: "common",
+    env : "node",
     tests : [
-        "test/*-test.js"
+        "strftime/test/*-test.js"
     ]
 };
 
 config["My browser test"] = {
-    env : "browser", // or "browser"
+    extends: "common",
+    env : "browser",
     sources : [
-        "src/*.js"
+        "strftime/src/*.js"
     ],
     tests : [
-        "test/*-test.js"
+        "strftime/test/*-test.js"
     ]
 };
