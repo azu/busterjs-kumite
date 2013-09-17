@@ -7,7 +7,6 @@ buster.testCase("My Failure Test", {
         buster.referee.fail = function(message){
             var exception = new Error(message);
             exception.name = "AssertionError";
-            console.log(exception);
             // failが起きた時にpassしたとイベントを投げる
             buster.referee.emit("pass", "fail", message || "");
         };

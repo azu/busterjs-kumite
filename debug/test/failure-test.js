@@ -1,9 +1,3 @@
-if (typeof module == "object" && typeof require == "function"){
-    var buster = require("buster");// node環境なら読み込む
-}
-function fai(){
-    assert(false);
-}
 buster.testCase("My Failure Test", {
     "Assertion failure" : {
         "refute should fail" : function(){
