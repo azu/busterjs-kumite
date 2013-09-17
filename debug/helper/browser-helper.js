@@ -18,7 +18,7 @@ buster.testRunner.on("suite:end", function(){
 
 var assertions = 0;
 
-buster.assertions.on("failure", function(){
+buster.referee.on("failure", function(){
     assertions += 1;
     console.log(assertions);
 });
